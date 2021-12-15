@@ -21,6 +21,7 @@ export default function SignIn({ setTab }) {
 
     const { error } = await signUpFunc(user);
     if (error) alert(error);
+    else setTab(1);
   };
   return (
     <form onSubmit={submit} className="column inlineFlex gap-1">

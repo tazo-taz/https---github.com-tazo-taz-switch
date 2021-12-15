@@ -32,6 +32,7 @@ export const signUpFunc = async (user) => {
     data: { error },
   } = await signUpAxios(user);
   if (error) return { error };
+  else return {};
 };
 
 export const logoutFunc = async (dispatch) => {
