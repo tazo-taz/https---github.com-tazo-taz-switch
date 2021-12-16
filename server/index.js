@@ -10,6 +10,7 @@ require('dotenv').config();
 
 const app = express();
 
+// aq databazis saxeli
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
 const db = mongoose.connection;
 
